@@ -56,15 +56,15 @@ public class PhFlag extends GraphicsProgram {
         //Rays
         for (int i = 0; i <= 7; i++ ){
             GPolygon ray = new GPolygon();
-            ray.addVertex(0,0);
-            ray.addVertex(30,0);
-            ray.addVertex(30,100);
-            ray.addVertex(15,120);
+            ray.addVertex(-15,0);
+            ray.addVertex(15,0);
+            ray.addVertex(15,80);
             ray.addVertex(0,100);
+            ray.addVertex(-15,80);
             ray.setFilled(true);
             ray.setFillColor(Color.yellow);
             ray.rotate(i*45);
-            add(ray,0.143*width-15,height/2);
+            add(ray,0.143*width-(15/2),height/2);
         }
 
         //Sun
