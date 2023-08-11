@@ -1,7 +1,7 @@
-public class Circle {
+public class Circle extends Shape{
 
     public double radius;
-    public double pi = 3.14159;
+    public double pi = Math.PI;
 
     public void setRadius(double radius){
         this.radius = radius;
@@ -12,7 +12,7 @@ public class Circle {
         return area;
     }
 
-    public double calculateCircumference(){
+    public double calculatePerimeter(){
         double circum = 2*pi*radius;
         return circum;
     }

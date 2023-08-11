@@ -80,7 +80,7 @@ public class ShapeCalculator {
         circ.setRadius(radius);
 
         System.out.println("\nThe area is " + circ.calculateArea() + " sq. units.");
-        System.out.println("The perimeter is " + circ.calculateCircumference() + " units.");
+        System.out.println("The perimeter is " + circ.calculatePerimeter() + " units.");
     }
     private static void ellipseComputations() {
         Ellipse elli = new Ellipse();
@@ -94,7 +94,7 @@ public class ShapeCalculator {
         elli.setMinorAxis(minorAxis);
 
         System.out.println("\nThe area is " + elli.calculateArea() + " sq. units.");
-        System.out.println("The perimeter is " + elli.calculateCircumference() + " units.");
+        System.out.println("The perimeter is " + elli.calculatePerimeter() + " units.");
     }
 }
 

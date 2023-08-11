@@ -1,6 +1,6 @@
-public class Ellipse {
+public class Ellipse extends Shape{
 
-    public double pi = 3.14159;
+    public double pi = Math.PI;
     public double majorAxis;
     public double minorAxis;
 
@@ -17,7 +17,7 @@ public class Ellipse {
         return area;
     }
 
-    public double calculateCircumference(){
+    public double calculatePerimeter(){
 
         double a = majorAxis*majorAxis;
         double b = minorAxis*minorAxis;
@@ -25,11 +25,5 @@ public class Ellipse {
         double circum = 2*pi*Math.sqrt((a+b)/2);
         return circum;
 
-//        double h = (majorAxis-minorAxis)*(majorAxis-minorAxis)/(majorAxis+minorAxis)*(majorAxis+minorAxis);
-//        double x = Math.abs(4-(3*h));
-//        double y = Math.sqrt(x);
-//        double z = 4-(3*h);
-//        double circum = pi*(majorAxis+minorAxis)*(1+(3*h/10+y));
-//        return z;
     }
 }
